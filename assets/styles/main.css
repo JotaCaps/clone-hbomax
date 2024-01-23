@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #020228;
+}
+
+
+.menu {
+   width: 100%;
+   display: flex;
+   padding: 32px 24px;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+
+    background-color: #00000063;
+
+    gap: 24px;
+    position: fixed;
+}
+
+.menu__item {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a.menu__item {
+    text-decoration: none;
+    color: white;
+    margin-right: 24px;
+}
+
+button.menu__item {
+    border: none;
+    padding: 8px 26px;
+    border-radius: 1rem;
+    background-color: #b535f6;
+    color: #fff;
+}
+
+.header {
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+
+    padding: 100px 0 0; 
+    background-size: 400% 400%;  
+    animation: gradient 10s ease infinite alternate;
+}
+
+@keyframes gradient {
+
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+
+}
+
+.header__content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+
+    padding: 0 40px;
+    margin-top: 100px;
+
+}
+
+.header__channels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.title__light {
+    font-size: 2rem;
+    display: block;
+    font-weight: 300;
+}
+
+.header__title {
+    font-size: 48px;
+}
+
+.divider {
+    width: 70%;
+    max-width: 700px;
+    height: 5px;
+    background: var(--divider-bg-color); 
+}
+
+.button.button--gradient {
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    background-size: 250%;
+}
+
+.button {
+    padding: 16px 48px;
+    border-radius: 500px;
+    border: none;
+    background-color: #b535f6;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.offer__price {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.offer__price-small {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.depois {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--primary-color), transparent);
+    margin-bottom: 85px;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.container h2 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.subscription__card{
+    max-width: 600px;
+    min-height: 600px;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+
+    background: var(--card-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.sub__price{
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.text__small {
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.subscription__plan {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+}
+
+.subscription__description {
+    margin-bottom: 14px;
+    padding-top: 14px;
+    text-align: start;
+    list-style: disc;
+}
+
+
+
+
+.subscription__card button {
+    margin-top: 6rem;
+    font-size: 13px;
+}
