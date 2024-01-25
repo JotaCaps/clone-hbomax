@@ -1,0 +1,77 @@
+@media screen and (min-width: 480px) {
+    .menu {
+        flex-direction: row;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .subscription__plans {
+        display: flex;
+        gap: 60px;
+        margin: auto;
+    }
+
+    #subscription {
+        background-image: url(../images/background-movies-series.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: static;
+    }
+}
+
+@media screen and (min-width: 482px) {
+    .subscription__card {
+
+    }
+}
+
+@media screen and (min-width:740px)  {
+    .subscription__plan {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+  .contents__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+
+@media screen and (min-width: 820px) {
+    .contents__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 748px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .copi {
+        display: block;
+    }
+
+    .footer__social {
+        align-self: center;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: row;
+    }
+  }
+
