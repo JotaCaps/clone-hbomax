@@ -30,6 +30,9 @@
 
 body {
     background-color: #020228;
+    background-image: url(../images/background-movies-series.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ::-webkit-scrollbar {
@@ -72,6 +75,12 @@ a.menu__item {
     color: white;
     margin-right: 8px;
     font-size: .6rem;
+}
+
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
 }
 
 button.menu__item {
@@ -360,6 +369,8 @@ img {
     font-size: 0.75rem;
     margin: 16px 0;
     color: var(--link-color);
+    font-weight: 100;
+    font-family:"Quicksand", sans-serif;
 }
 
 .footer__link {
@@ -372,18 +383,14 @@ img {
     letter-spacing: 2px;
     transition: color 0.5s;
     font-size: 0.875rem;
+    line-height: 30px;
 }
-
-a.footer__link {
-    margin: 0 14px 16px;
-}
-
 
 
 .footer__social {
     display: flex;
     gap: 40px;
-    margin-top: 80px;
+    margin-top: 60px;
     justify-content: center;
     align-items: center;
 }

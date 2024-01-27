@@ -34,11 +34,6 @@
     }
 }
 
-@media screen and (min-width: 482px) {
-    .subscription__card {
-
-    }
-}
 
 @media screen and (min-width:740px)  {
     .subscription__plan {
@@ -85,7 +80,7 @@
 
     .footer__links {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
     }
   }
 
